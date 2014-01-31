@@ -3988,16 +3988,19 @@ body section[class*=content-] {
 }
 .content-30 .features .box-1 .description-top,
 .content-30 .features .box-2 .description-top {
-  left: 105%;
+  left: 100%;
 }
 .content-30 .features .box-3 .description-top,
 .content-30 .features .box-4 .description-top {
-  right: 105%;
+  right: 90%;
 }
-.content-30 .features .box-1 .description-bottom,
-.content-30 .features .box-3 .description-bottom {
+.content-30 .features .box-1 .description-bottom {
   left: 105%;
 }
+.content-30 .features .box-3 .description-bottom {
+  right:90%;
+}
+
 .content-30 .features .box-2 .description-bottom,
 .content-30 .features .box-4 .description-bottom {
   right: 105%;
