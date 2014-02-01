@@ -1,4 +1,4 @@
-(function($) {
+/*(function($) {
     $(function() {
         // Focus state for append/prepend inputs
         $('.input-prepend, .input-append').on('focus', 'input', function() {
@@ -9,24 +9,24 @@
        
         (function(el) {
             $(window).resize(function() {
-                if (!$('> img', el).hasClass('ani-processed')) {
+                if (!$('> img', el).hasClass('ani-processed2')) {
                     el.data('scrollPos', el.offset().top - $(window).height() + el.outerHeight() - parseInt(el.css('padding-bottom'), 10));
                 }
             }).scroll(function() {
-                if (!$('> img', el).hasClass('ani-processed')) {
+                if (!$('> img', el).hasClass('ani-processed2')) {
                     if ($(window).scrollTop() >= el.data('scrollPos')) {
-                        $('> img', el).addClass('ani-processed');
+                        $('> img', el).addClass('ani-processed2');
                         $('.box', el).each(function(idx) {
-                            $(this).delay(idx * 200).animate({
+                            $(this).delay(idx * 100).animate({
                                 fake : 0
                             }, 1, 'linear', function() {
-                                $(this).addClass('ani-processed');
+                                $(this).addClass('ani-processed2');
                             });
                         });
                     }
                 }
             });
-        })($('.content-10'));
+        })($('.content-10CMS'));
     });
 
     $(window).load(function() {
@@ -35,3 +35,4 @@
     });
 })(jQuery);
 
+*/

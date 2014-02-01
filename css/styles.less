@@ -67,12 +67,23 @@
     padding-bottom: 80px;
 }
 
-
+.brand>.sparklogo {
+    width:200px;
+    @media (max-width: 979px) and (min-width: 768px) {
+    width:100px;
+     }
+     @media (max-width: 768px){ 
+    width:70px;
+    }
+    @media (max-width:480px){
+        width:50px;
+    }
+}
 
 /* Content 10 CMS */
 
-/*
-.content-10 {
+
+.content-10CMS {
    
     overflow:hidden;
     .features .box {
@@ -85,20 +96,20 @@
         position: absolute;
         right: -100px;
         height: 100%;
-        .opacity(0);
-        &.ani-processed {
-            .transition(~'.8s right, 1.2s opacity');
+        opacity:0;
+        &.ani-processed2 {
+            transition:8s right, 1.2s opacity;
             right: 0;
-            .opacity(1);
+            opacity:1;
         }
     }
     .box {
         left: -15%;
-        .opacity(0);
-        &.ani-processed {
-            .transition(~'.8s left, 1.2s opacity');
+        opacity:0;
+        &.ani-processed2 {
+            transition:8s left, 1.2s opacity;
             left: 0;
-            .opacity(1);
+            opacity:1;
         }
     }
     @media (max-width: 480px) {
@@ -107,5 +118,5 @@
         }
     }
 }
-*/
+
 
